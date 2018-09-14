@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+include("../header.php"); ?>
 
 <!doctype html>
 <html lang="en"> 
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="/css /beststyle2018.css"> 
-    <title>Your UpDog Account Details</title>
+    <title>Your <?php echo $text; ?> Account Details</title>
 	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -22,7 +23,7 @@
 	
 	<?php 
 	$_SESSION['extra'] =  '<li class="nav-item"><a class="nav-link" href="#">Log Out</a></li>';
-	include("../header.php");
+	
 	$_SESSION['cc'] = base64_decode($_REQUEST['l']);
 	$_SESSION['amount'] = '$' . base64_decode($_REQUEST['a']);
 	?>

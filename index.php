@@ -33,9 +33,7 @@ $_SESSION['extra'] = '';
 		
 		<div class="jumbotron col-md-6 offset-md-6">
 			
-			<h2>Welcome to <?php 
-						echo $text; 
-					?></h2>
+			<h2>Welcome to <?php echo $text; ?></h2>
 			<h4>We keep for your finances out of the doghouse!</h4>
 			<p class="lead">
 				To get started with our award winning online banking system simply log in below:
